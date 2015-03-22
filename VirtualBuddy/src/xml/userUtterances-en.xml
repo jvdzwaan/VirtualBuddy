@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<utterances>
+	<nlUtterance code="greet(code1)">
+		<text>Hoi</text>
+	</nlUtterance>
+	<nlUtterance code="greet(code2)">
+		<text>Hallo, ik ben Piet</text>
+	</nlUtterance>
+	<nlUtterance code="greet(code3)">
+		<text>Hoihoi! :)</text>
+	</nlUtterance>
+	<nlUtterance code="incident(q1,a1)">
+		<text>Duidelijk antwoord a1!</text>
+	</nlUtterance>
+	<nlUtterance code="incident(kleur,rood)">
+		<text>Rood!</text>
+	</nlUtterance>
+	<nlUtterance code="incident(kleur,blauw)">
+		<text>Blauw!</text>
+	</nlUtterance>
+	<nlUtterance code="incident(kleur,groen)">
+		<text>Groen!</text>
+	</nlUtterance>
+	<nlUtterance code="incident(kleur,geel)">
+		<text>Geel!</text>
+	</nlUtterance>
+	<nlUtterance code="conversation(Nod_explanation,yes)">
+		<text>No</text>
+	</nlUtterance>
+	<nlUtterance code="conversation(Nod_explanation,no)">
+		<text>Yes</text>
+	</nlUtterance>
+	<nlUtterance code="conversation(explanation_request_feedback,yes)">
+		<text>Yes</text>
+	</nlUtterance>
+	<nlUtterance code="conversation(explanation_request_feedback,no)">
+		<text>No</text>
+	</nlUtterance>
+	<nlUtterance code="conversation(confirm_conversation_end,yes)">
+		<text>Yes, ik wil stoppen</text>
+	</nlUtterance>
+	<nlUtterance code="conversation(confirm_conversation_end,no)">
+		<text>No, ik wil doorgaan</text>
+	</nlUtterance>
+	
+	<!-- 
+		***********************************************************************
+		* Interactieve demo 
+		***********************************************************************
+	-->
+	
+	<!-- Robin - phase 1 -->
+	<nlUtterance code="greet">
+		<text>Hi Robin</text>
+	</nlUtterance>
+	<nlUtterance code="introduce(user)">
+		<text>Hi, my name is NAAM</text>
+	</nlUtterance>
+	
+	<!-- Robin - phase 2 -->
+	<nlUtterance code="incident(type,cyberbullying)">
+		<text>I'm being cyberbullied</text>
+	</nlUtterance>
+	<nlUtterance code="incident(type,nothing)">
+		<text>Nothing</text>
+	</nlUtterance>
+	
+	<nlUtterance code="incident(method_cb,email)">
+		<text>By e-mail</text>
+	</nlUtterance>
+	<nlUtterance code="incident(method_cb,msn)">
+		<text>On MSN</text>
+	</nlUtterance>
+		<nlUtterance code="incident(method_cb,facebook)">
+		<text>On Facebook</text>
+	</nlUtterance>
+	<nlUtterance code="incident(method_cb,hyves)">
+		<text>On Hyves</text>
+	</nlUtterance>
+
+	<nlUtterance code="incident(type_cb,called_names)">
+		<text>Someone is calling me names</text>
+	</nlUtterance>
+	<nlUtterance code="incident(type_cb,threatened)">
+		<text>Someone is threatening me</text>
+	</nlUtterance>
+	<nlUtterance code="incident(type_cb,hacked)">
+		<text>My account was hacked</text>
+	</nlUtterance>
+	<nlUtterance code="incident(type_cb,social_exclusion)">
+		<text>I'm being excluded</text>
+	</nlUtterance>
+	<nlUtterance code="incident(type_cb,harassment)">
+		<text>I'm being harassed</text>
+	</nlUtterance>
+	<nlUtterance code="incident(type_cb,pictures)">
+		<text>Someone edited and distributed photos or videos of me</text>
+	</nlUtterance>
+	
+	<nlUtterance code="incident(bully,real_life_contact)">
+		<text>Someone I know in real life</text>
+	</nlUtterance>
+	<nlUtterance code="incident(bully,online_contact)">
+		<text>An online contact</text>
+	</nlUtterance>
+	<nlUtterance code="incident(bully,anonymous)">
+		<text>I don't know</text>
+	</nlUtterance>
+
+	<nlUtterance code="incident(bullying_duration,once)">
+		<text>This was the first time</text>
+	</nlUtterance>
+	<nlUtterance code="incident(bullying_duration,weeks_months)">
+		<text>A couple of weeks or months</text>
+	</nlUtterance>
+	<nlUtterance code="incident(bullying_duration,over_a_year)">
+		<text>For over a year</text>
+	</nlUtterance>
+
+	<nlUtterance code="incident(response_to_bullying,do_nothing)">
+		<text>I do nothing</text>
+	</nlUtterance>
+	<nlUtterance code="incident(response_to_bullying,retaliate)">
+		<text>I retaliate</text>
+	</nlUtterance>
+	<nlUtterance code="incident(response_to_bullying,talk_to_someone)">
+		<text>I talk about it</text>
+	</nlUtterance>
+	<nlUtterance code="incident(response_to_bullying,stand_up)">
+		<text>I stand up to the bully</text>
+	</nlUtterance>
+	<nlUtterance code="incident(response_to_bullying,block_the_bully)">
+		<text>I block the bully</text>
+	</nlUtterance>
+	<nlUtterance code="incident(response_to_bullying,report_bully)">
+		<text>I report the bully</text>
+	</nlUtterance>
+	
+	<nlUtterance code="incident(effectiveness_response_to_bullying,stopped)">
+		<text>Yes, the bullying has stopped</text>
+	</nlUtterance>
+	<nlUtterance code="incident(effectiveness_response_to_bullying,felt_better)">
+		<text>Yes, I felt better after I did that</text>
+	</nlUtterance>
+	<nlUtterance code="incident(effectiveness_response_to_bullying,no_change)">
+		<text>No, nothing has changed</text>
+	</nlUtterance>
+	<nlUtterance code="incident(effectiveness_response_to_bullying,became_worse)">
+		<text>No, the bullying became worse</text>
+	</nlUtterance>
+
+	<nlUtterance code="incident(talked_to_someone,yes)">
+		<text>Yes</text>
+	</nlUtterance>
+	<nlUtterance code="incident(talked_to_someone,no)">
+		<text>No</text>
+	</nlUtterance>
+	
+	<nlUtterance code="incident(talked_to,sibling)">
+		<text>To a brother or sister</text>
+	</nlUtterance>
+	<nlUtterance code="incident(talked_to,peer)">
+		<text>To a friend</text>
+	</nlUtterance>
+	<nlUtterance code="incident(talked_to,parent)">
+		<text>To my mother or father</text>
+	</nlUtterance>
+	<nlUtterance code="incident(talked_to,teacher)">
+		<text>To a teacher or school counselor</text>
+	</nlUtterance>
+	<nlUtterance code="incident(talked_to,online_contact)">
+		<text>To an online friend</text>
+	</nlUtterance>
+	<nlUtterance code="incident(talked_to,someone_else)">
+		<text>To someone else</text>
+	</nlUtterance>
+	
+	<nlUtterance code="incident(effectiveness_talked_to,stopped)">
+		<text>Yes, the bullying has stopped</text>
+	</nlUtterance>
+	<nlUtterance code="incident(effectiveness_talked_to,felt_better)">
+		<text>Yes, I felt better after I did that</text>
+	</nlUtterance>
+	<nlUtterance code="incident(effectiveness_talked_to,no_change)">
+		<text>No, nothing has changed</text>
+	</nlUtterance>
+	<nlUtterance code="incident(effectiveness_talked_to,became_worse)">
+		<text>No, the bullying became worse</text>
+	</nlUtterance>
+
+	<!-- Robin - phase 3 -->
+	<nlUtterance code="conversation(conversation_objective,tell_story)">
+		<text>I would like to tell my story</text>
+	</nlUtterance>
+	<nlUtterance code="conversation(conversation_objective,tips)">
+		<text>I would like tips to stop the bullying</text>
+	</nlUtterance>
+	
+	<nlUtterance code="conversation(want_tips,yes)">
+		<text>Yes</text>
+	</nlUtterance>
+	<nlUtterance code="conversation(want_tips,no)">
+		<text>No</text>
+	</nlUtterance>
+	
+	<nlUtterance code="incident(tell_story_to,parent)">
+		<text>My mother or father</text>
+	</nlUtterance>
+	<nlUtterance code="incident(tell_story_to,teacher)">
+		<text>A teacher or school counselor</text>
+	</nlUtterance>
+	<nlUtterance code="incident(tell_story_to,sibling)">
+		<text>My brother or sister</text>
+	</nlUtterance>
+	<nlUtterance code="incident(tell_story_to,peer)">
+		<text>A friend</text>
+	</nlUtterance>
+	<nlUtterance code="incident(tell_story_to,dont_know)">
+		<text>I don't know</text>
+	</nlUtterance>
+	
+	<!-- Robin - phase 4 -->
+	<nlUtterance code="incident(coping_future,ignore)">
+		<text>Ignore it</text>
+	</nlUtterance>
+	<nlUtterance code="incident(coping_future,stand_up)">
+		<text>Stand up for myself</text>
+	</nlUtterance>
+	<nlUtterance code="incident(coping_future,talk_to)">
+		<text>Ask for help</text>
+	</nlUtterance>
+
+	<nlUtterance code="incident(cf_conversation_partner,parent)">
+		<text>My mother or father</text>
+	</nlUtterance>
+	<nlUtterance code="incident(cf_conversation_partner,teacher)">
+		<text>A teacher or school counselor</text>
+	</nlUtterance>
+	<nlUtterance code="incident(cf_conversation_partner,other_adult)">
+		<text>Another adult</text>
+	</nlUtterance>
+	<nlUtterance code="incident(cf_conversation_partner,sibling)">
+		<text>My brother or sister</text>
+	</nlUtterance>
+	<nlUtterance code="incident(cf_conversation_partner,peer)">
+		<text>A friend</text>
+	</nlUtterance>
+	<nlUtterance code="incident(cf_conversation_partner,dont_know)">
+		<text>I don't know</text>
+	</nlUtterance>
+	
+	<nlUtterance code="advice(msn_block_contact,confirm)">
+		<text>OK</text>
+	</nlUtterance>
+	
+	<nlUtterance code="request_teaching(msn_block_contact,yes)">
+		<text>Yes</text>
+	</nlUtterance>
+	<nlUtterance code="request_teaching(msn_block_contact,no)">
+		<text>No</text>
+	</nlUtterance>
+	<nlUtterance code="teach_step(msn_block_contact,log_in,confirm)">
+		<text>OK</text>
+	</nlUtterance>
+	<nlUtterance code="teach_step(msn_block_contact,select_contacts,confirm)">
+		<text>OK</text>
+	</nlUtterance>
+	<nlUtterance code="teach_step(msn_block_contact,right_click_contact,confirm)">
+		<text>OK</text>
+	</nlUtterance>
+	<nlUtterance code="teach_step(msn_block_contact,choose_block,confirm)">
+		<text>OK</text>
+	</nlUtterance>
+	
+	<nlUtterance code="advice(hyves_block_contact,confirm)">
+		<text>OK</text>
+	</nlUtterance>
+	<nlUtterance code="request_teaching(hyves_block_contact,yes)">
+		<text>Yes</text>
+	</nlUtterance>
+	<nlUtterance code="request_teaching(hyves_block_contact,no)">
+		<text>No</text>
+	</nlUtterance>
+	<nlUtterance code="teach_step(hyves_block_contact,log_in,confirm)">
+		<text>OK</text>
+	</nlUtterance>
+	<nlUtterance code="teach_step(hyves_block_contact,go_to_profile,confirm)">
+		<text>OK</text>
+	</nlUtterance>
+	<nlUtterance code="teach_step(hyves_block_contact,unfriend_contact,confirm)">
+		<text>OK</text>
+	</nlUtterance>
+	<nlUtterance code="teach_step(hyves_block_contact,block_contact,confirm)">
+		<text>OK</text>
+	</nlUtterance>
+	
+	<nlUtterance code="advice(hyves_report,confirm)">
+		<text>OK</text>
+	</nlUtterance>
+	<nlUtterance code="request_teaching(hyves_report,yes)">
+		<text>Yes</text>
+	</nlUtterance>
+	<nlUtterance code="request_teaching(hyves_report,no)">
+		<text>No</text>
+	</nlUtterance>
+	<nlUtterance code="teach_step(hyves_report,log_in,confirm)">
+		<text>OK</text>
+	</nlUtterance>
+	<nlUtterance code="teach_step(hyves_report,go_to_url,confirm)">
+		<text>OK</text>
+	</nlUtterance>
+	<nlUtterance code="teach_step(hyves_report,fill_out_form,confirm)">
+		<text>OK</text>
+	</nlUtterance>
+	<nlUtterance code="teach_step(hyves_report,click_send,confirm)">
+		<text>OK</text>
+	</nlUtterance>
+	
+	<nlUtterance code="advice(facebook_block_contact,confirm)">
+		<text>OK</text>
+	</nlUtterance>
+	<nlUtterance code="request_teaching(facebook_block_contact,yes)">
+		<text>Yes</text>
+	</nlUtterance>
+	<nlUtterance code="request_teaching(facebook_block_contact,no)">
+		<text>No</text>
+	</nlUtterance>
+	<nlUtterance code="teach_step(facebook_block_contact,log_in,confirm)">
+		<text>OK</text>
+	</nlUtterance>
+	<nlUtterance code="teach_step(facebook_block_contact,go_to_profile,confirm)">
+		<text>OK</text>
+	</nlUtterance>
+	<nlUtterance code="teach_step(facebook_block_contact,click_settings,confirm)">
+		<text>OK</text>
+	</nlUtterance>
+	<nlUtterance code="teach_step(facebook_block_contact,choose_block,confirm)">
+		<text>OK</text>
+	</nlUtterance>
+	
+	<nlUtterance code="advice(facebook_report,confirm)">
+		<text>OK</text>
+	</nlUtterance>
+	<nlUtterance code="request_teaching(facebook_report,yes)">
+		<text>Yes</text>
+	</nlUtterance>
+	<nlUtterance code="request_teaching(facebook_report,no)">
+		<text>No</text>
+	</nlUtterance>
+	<nlUtterance code="teach_step(facebook_report,log_in,confirm)">
+		<text>OK</text>
+	</nlUtterance>
+	<nlUtterance code="teach_step(facebook_report,go_to_picture,confirm)">
+		<text>OK</text>
+	</nlUtterance>
+	<nlUtterance code="teach_step(facebook_report,click_options,confirm)">
+		<text>OK</text>
+	</nlUtterance>
+	<nlUtterance code="teach_step(facebook_report,choose_report,confirm)">
+		<text>OK</text>
+	</nlUtterance>
+	
+	<nlUtterance code="advice(create_new_account,confirm)">
+		<text>OK</text>
+	</nlUtterance>
+	
+	<nlUtterance code="advice(dont_share_private_info,confirm)">
+		<text>OK</text>
+	</nlUtterance>
+	
+	<nlUtterance code="advice(dont_respond,confirm)">
+		<text>OK</text>
+	</nlUtterance>
+	
+	<nlUtterance code="advice(print_evidence,confirm)">
+		<text>OK</text>
+	</nlUtterance>
+	
+	<nlUtterance code="advice(email_friends_only,confirm)">
+		<text>OK</text>
+	</nlUtterance>
+	
+	<nlUtterance code="advice(accept_friends,confirm)">
+		<text>OK</text>
+	</nlUtterance>
+	
+	<!-- Robin - phase 5 -->
+	<nlUtterance code="conversation(feedback_conversation,yes)">
+		<text>Yes</text>
+	</nlUtterance>
+	<nlUtterance code="conversation(feedback_conversation,no)">
+		<text>No</text>
+	</nlUtterance>
+	
+</utterances>	

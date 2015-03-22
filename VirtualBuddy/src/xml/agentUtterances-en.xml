@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<utterances>
+	<!-- Tutorial buddy -->
+	<nlUtterance code="incident(q1)">
+		<text>Wat is er gebeurd?</text>
+		<responseOption>incident(q1,cyberbullying)</responseOption>
+		<responseOption>incident(q1,niets)</responseOption>
+	</nlUtterance>
+	<nlUtterance code="incident(q2)">
+		<text>Hoe voel je je door het gepest?</text>
+	</nlUtterance>
+	<nlUtterance code="tutorial_uitleg">
+		<text>Ik ga je uitleggen hoe dit programma werkt, door je opdrachten te geven.</text>
+	</nlUtterance>
+	<nlUtterance code="aankondiging_opdracht1">
+		<text>Nu komt de eerste opdracht.</text>
+	</nlUtterance>
+	<nlUtterance code="uitleg_opdracht1_deel1">
+		<text>Je krijgt zometeen onder het chat window een aantal knoppen te zien. </text>
+	</nlUtterance>
+	<nlUtterance code="uitleg_opdracht1_deel2">
+		<text>Deze knoppen representeren dingen die je tegen mij kunt zeggen.</text>
+	</nlUtterance>
+	<nlUtterance code="uitleg_opdracht1_deel3">
+		<text>Klik op de knop met het juiste antwoord.</text>
+	</nlUtterance>
+	<nlUtterance code="incident(kleur,x)">
+		<text>Wat is je favoriete kleur?</text>
+		<responseOption>incident(kleur,rood)</responseOption>
+		<responseOption>incident(kleur,blauw)</responseOption>
+		<responseOption>incident(kleur,geel)</responseOption>
+		<responseOption>incident(kleur,groen)</responseOption>
+	</nlUtterance>
+	<nlUtterance code="bevestig_antwoord_opdracht1">
+		<text>Je favoriete kleur is x.</text>
+	</nlUtterance>
+	<nlUtterance code="sympathy(kleur,rood)">
+		<text>Wat leuk! Mijn favoriete kleur is ook rood.</text>
+	</nlUtterance>
+	<nlUtterance code="uitleg_opdracht2_deel1">
+		<text>Linksonder in het scherm zie je een geel gezicht. </text>
+	</nlUtterance>
+	<nlUtterance code="uitleg_opdracht2_deel2">
+		<text>Dit is een knop waarmee je kunt aangeven hoe je je voelt. </text>
+	</nlUtterance>
+	<nlUtterance code="uitleg_opdracht2_deel3">
+		<text>Als je met de muis over het gezicht beweegt verandert de gezichtsuitdrukking. </text>
+	</nlUtterance>
+	<nlUtterance code="uitleg_opdracht2_deel4">
+		<text>Als je klikt, dan weet ik hoe je je voelt.</text>
+	</nlUtterance>
+	<nlUtterance code="incident(ab1,x)">
+		<text>Hoe voel je je nu?</text>
+	</nlUtterance>
+	<nlUtterance code="compliment1">
+		<text>Goed gedaan!</text>
+	</nlUtterance>
+	<nlUtterance code="uitleg_opdracht3_deel1">
+		<text>Na het klikken staat het gezicht vast.</text>
+	</nlUtterance>
+	<nlUtterance code="uitleg_opdracht3_deel2">
+		<text>Als je nog een keer wilt aangegeven hoe je je voelt, moet je eerst op de knop 'activeer affectbutton' klikken.</text>
+	</nlUtterance>
+	<nlUtterance code="incident(ab2,x)">
+		<text>Doe dat eens? En kies dan nog eens een keer een gezichtsuitdrukking.</text>
+	</nlUtterance>
+	<nlUtterance code="compliment2">
+		<text>Heel goed!</text>
+	</nlUtterance>
+	<nlUtterance code="dag1">
+		<text>Nu weet je hoe het programma werkt.</text>
+	</nlUtterance>
+	<nlUtterance code="dag2">
+		<text>Tot de volgende keer!</text>
+	</nlUtterance>
+	
+	<!-- 
+		***********************************************************************
+		* Interactieve demo 
+		***********************************************************************
+	-->
+	<!-- Robin - phase 1 -->
+	<nlUtterance code="greet">
+		<text>Hi, my name is Robin!</text>
+		<responseOption>greet</responseOption>
+		<responseOption>introduce(user)</responseOption>
+	</nlUtterance>
+	<nlUtterance code="conversation(need_explanation,x)">
+		<text>Heb je al eerder met mij gechat?</text>
+		<responseOption>conversation(need_explanation,yes)</responseOption>
+		<responseOption>conversation(need_explanation,no)</responseOption>
+	</nlUtterance>
+	<nlUtterance code="acknowledge(need_explanation,yes)">
+		<text>Okee, dan geef ik je even een korte uitleg</text>
+	</nlUtterance>
+	<nlUtterance code="acknowledge(need_explanation,no)">
+		<text>Okee, dan hoef ik je niks uit te leggen</text>
+	</nlUtterance>
+	<nlUtterance code="explain_chat_part1">
+		<text>Pesten is heel ingewikkeld. Ik ga mijn best doen om je te helpen, maar ik kan het pesten niet laten stoppen.</text>
+	</nlUtterance>
+	<nlUtterance code="explain_chat_part2">
+		<text>Ik ga je best veel vragen stellen. Dit doe ik zodat ik goed weet wat er aan de hand is.</text>
+	</nlUtterance>
+	<nlUtterance code="explain_chat_part3">
+		<text>Daarna kijken we samen wat je er zoveel mogelijk aan kunt doen.</text>
+	</nlUtterance>
+	<nlUtterance code="conversation(explanation_request_feedback,x)">
+		<text>Goed?</text>
+		<responseOption>conversation(explanation_request_feedback,yes)</responseOption>
+		<responseOption>conversation(explanation_request_feedback,no)</responseOption>
+	</nlUtterance>
+	<nlUtterance code="announce_conversation_end1">
+		<text>Dan moet ik dit gesprek helaas stoppen.</text>
+	</nlUtterance>
+	<nlUtterance code="conversation(confirm_conversation_end,x)">
+		<text>Weet je zeker dat je niet verder wilt chatten?</text>
+		<responseOption>conversation(confirm_conversation_end,yes)</responseOption>
+		<responseOption>conversation(confirm_conversation_end,no)</responseOption>
+	</nlUtterance>
+	<nlUtterance code="acknowledge(confirm_conversation_end,no))">
+		<text>Okee</text>
+	</nlUtterance>
+	<nlUtterance code="acknowledge(confirm_conversation_end,yes))">
+		<text>Okee</text>
+	</nlUtterance>
+	<nlUtterance code="acknowledge(explanation_request_feedback,no)">
+		<text>Okee</text>
+	</nlUtterance>
+	<nlUtterance code="acknowledge(explanation_request_feedback,yes)">
+		<text>Okee</text>
+	</nlUtterance>
+	
+	<!-- Robin - phase 2 -->
+	<nlUtterance code="incident(type,x)">
+		<text>What is the matter?</text>
+		<responseOption>incident(type,cyberbullying)</responseOption>
+		<!-- <responseOption>incident(type,nothing)</responseOption> -->
+	</nlUtterance>
+	<nlUtterance code="incident(method_cb,x)">
+		<text>Where are you being bullied?</text>
+		<responseOption>incident(method_cb,msn)</responseOption>
+		<responseOption>incident(method_cb,facebook)</responseOption>
+		<responseOption>incident(method_cb,hyves)</responseOption>
+		<responseOption>incident(method_cb,email)</responseOption>
+	</nlUtterance>
+	<nlUtterance code="incident(type_cb,x)">
+		<text>How are you being bullied?</text>
+		<responseOption>incident(type_cb,called_names)</responseOption>
+		<responseOption>incident(type_cb,threatened)</responseOption>
+		<responseOption>incident(type_cb,pictures)</responseOption>
+		<responseOption>incident(type_cb,hacked)</responseOption>
+	</nlUtterance>
+	
+	<nlUtterance code="sympathy(type_cb,called_names)">
+		<text>I'm sorry you are being called names!</text>
+	</nlUtterance>
+		<nlUtterance code="sympathy(type_cb,threatened)">
+		<text>I'm sorry you are being threatened!</text>
+	</nlUtterance>
+		<nlUtterance code="sympathy(type_cb,pictures)">
+		<text>I'm sorry someone did that!</text>
+	</nlUtterance>
+	<nlUtterance code="sympathy(type_cb,hacked)">
+		<text>I'm sorry your account was hacked!</text>
+	</nlUtterance>
+	
+	<nlUtterance code="incident(emotional_state,x)">
+		<text>How do you feel when that happens?</text>
+	</nlUtterance>
+	<nlUtterance code="explain_affect_button">
+		<text>(Move the mouse over the yellow face below and click when you have found the correct facial expression.)</text>
+	</nlUtterance>
+	
+	<nlUtterance code="sympathy(emotional_state,angry)">
+		<text>I'm sorry you are upset!</text>
+	</nlUtterance>
+	<nlUtterance code="sympathy(emotional_state,frustrated)">
+		<text>I'm sorry you are upset!</text>
+	</nlUtterance>
+	<nlUtterance code="sympathy(emotional_state,sad)">
+		<text>I'm sorry you are upset!</text>
+	</nlUtterance>
+	<nlUtterance code="sympathy(emotional_state,afraid)">
+		<text>I'm sorry you are upset!</text>
+	</nlUtterance>
+	<nlUtterance code="happy_for(emotional_state,happy)">
+		<text>I'm glad you remain postive!</text>
+	</nlUtterance>
+	<nlUtterance code="happy_for(emotional_state,content)">
+		<text>I'm glad you remain postive!</text>
+	</nlUtterance>
+	<nlUtterance code="happy_for(emotional_state,relaxed)">
+		<text>I'm glad you remain postive!</text>
+	</nlUtterance>
+	<nlUtterance code="happy_for(emotional_state,surprised)">
+		<text>I'm glad you remain postive!</text>
+	</nlUtterance>
+	
+	<nlUtterance code="sympathy(emotional_state,happy)">
+		<text>It doesn't seem to bother you that much...</text>
+	</nlUtterance>
+	<nlUtterance code="sympathy(emotional_state,content)">
+		<text>It doesn't seem to bother you that much...</text>
+	</nlUtterance>
+	<nlUtterance code="sympathy(emotional_state,relaxed)">
+		<text>It doesn't seem to bother you that much...</text>
+	</nlUtterance>
+	<nlUtterance code="sympathy(emotional_state,surprised)">
+		<text>It doesn't seem to bother you that much...</text>
+	</nlUtterance>
+
+	<nlUtterance code="incident(bully,x)">
+		<text>Do you know who is bullying you?</text>
+		<responseOption>incident(bully,real_life_contact)</responseOption>
+		<responseOption>incident(bully,online_contact)</responseOption>
+		<responseOption>incident(bully,anonymous)</responseOption>
+	</nlUtterance>
+	<nlUtterance code="incident(bullying_duration,x)">
+		<text>How long have you been bullied?</text>
+		<responseOption>incident(bullying_duration,once)</responseOption>
+		<responseOption>incident(bullying_duration,weeks_months)</responseOption>
+		<responseOption>incident(bullying_duration,over_a_year)</responseOption>
+	</nlUtterance>
+	
+	<nlUtterance code="incident(response_to_bullying,x)">
+		<text>How do you respond to bullying?</text>
+		<responseOption>incident(response_to_bullying,do_nothing)</responseOption>
+		<responseOption>incident(response_to_bullying,retaliate)</responseOption>
+		<responseOption>incident(response_to_bullying,talk_to_someone)</responseOption>
+		<responseOption>incident(response_to_bullying,stand_up)</responseOption>
+		<responseOption>incident(response_to_bullying,block_the_bully)</responseOption>
+		<!--<responseOption>incident(response_to_bullying,report_bully)</responseOption>-->
+	</nlUtterance>
+	
+	<nlUtterance code="disapprovement(response_to_bullying,retaliate)">
+		<text>That's not a very nice thing to do... Do you like to be bullied?</text>
+	</nlUtterance>
+	<nlUtterance code="compliment(response_to_bullying,talk_to_someone)">
+		<text>Very good you've talked about the bullying!</text>
+	</nlUtterance>
+	<nlUtterance code="compliment(response_to_bullying,stand_up)">
+		<text>I think it is very brave of you to stand up to the bully!</text>
+	</nlUtterance>
+	<nlUtterance code="compliment(response_to_bullying,block_the_bully)">
+		<text>Blocking the bully is a smart thing to do!</text>
+	</nlUtterance>
+	
+	<nlUtterance code="incident(effectiveness_response_to_bullying,x)">
+		<text>Does that help?</text>
+		<responseOption>incident(effectiveness_response_to_bullying,stopped)</responseOption>
+		<responseOption>incident(effectiveness_response_to_bullying,felt_better)</responseOption>
+		<responseOption>incident(effectiveness_response_to_bullying,no_change)</responseOption>
+		<responseOption>incident(effectiveness_response_to_bullying,became_worse)</responseOption>
+	</nlUtterance>
+	
+	<nlUtterance code="happy_for(effectiveness_response_to_bullying,stopped)">
+		<text>I'm happy to hear the bullying has stopped!</text>
+	</nlUtterance>
+	<nlUtterance code="happy_for(effectiveness_response_to_bullying,felt_better)">
+		<text>I'm glad you felt better!</text>
+	</nlUtterance>
+	<nlUtterance code="sympathy(effectiveness_response_to_bullying,no_change)">
+		<text>I'm sorry it didn't help...</text>
+	</nlUtterance>
+	<nlUtterance code="sympathy(effectiveness_response_to_bullying,became_worse)">
+		<text>I'm sorry it got worse!</text>
+	</nlUtterance>
+	
+	<nlUtterance code="incident(talked_to_someone,x)">
+		<text>Did you talk to someone about the bullying?</text>
+		<responseOption>incident(talked_to_someone,yes)</responseOption>
+		<responseOption>incident(talked_to_someone,no)</responseOption>
+	</nlUtterance>
+	
+	<nlUtterance code="incident(talked_to,x)">
+		<text>To whom?</text>
+		<!--<responseOption>incident(talked_to,sibling)</responseOption>-->
+		<responseOption>incident(talked_to,peer)</responseOption>
+		<responseOption>incident(talked_to,parent)</responseOption>
+		<responseOption>incident(talked_to,teacher)</responseOption>
+		<responseOption>incident(talked_to,online_contact)</responseOption>
+		<responseOption>incident(talked_to,someone_else)</responseOption>
+	</nlUtterance>
+	
+	<nlUtterance code="compliment(talked_to,peer)">
+		<text>Very good you've talked about the bullying!</text>
+	</nlUtterance>
+	<nlUtterance code="compliment(talked_to,parent)">
+		<text>Very good you've talked about the bullying!</text>
+	</nlUtterance>
+	<nlUtterance code="compliment(talked_to,teacher)">
+		<text>Very good you've talked about the bullying!</text>
+	</nlUtterance>
+	<nlUtterance code="compliment(talked_to,online_contact)">
+		<text>Very good you've talked about the bullying!</text>
+	</nlUtterance>
+	<nlUtterance code="compliment(talked_to,someone_else)">
+		<text>Very good you've talked about the bullying!</text>
+	</nlUtterance>
+	
+	<nlUtterance code="incident(effectiveness_talked_to,x)">
+		<text>And did it help?</text>
+		<responseOption>incident(effectiveness_talked_to,stopped)</responseOption>
+		<responseOption>incident(effectiveness_talked_to,felt_better)</responseOption>
+		<responseOption>incident(effectiveness_talked_to,no_change)</responseOption>
+		<responseOption>incident(effectiveness_talked_to,became_worse)</responseOption>
+	</nlUtterance>
+	
+	<nlUtterance code="happy_for(effectiveness_talked_to,felt_better)">
+		<text>I'm glad you felt better after you talked about it!</text>
+	</nlUtterance>
+
+	<nlUtterance code="happy_for(effectiveness_talked_to,stopped)">
+		<text>I'm happy to hear the bullying has stopped!</text>
+	</nlUtterance>
+	<nlUtterance code="sympathy(effectiveness_talked_to,no_change)">
+		<text>I'm sorry the bullying goes on...</text>
+	</nlUtterance>
+	<nlUtterance code="sympathy(effectiveness_talked_to,became_worse)">
+		<text>I'm sorry the bullying got worse!</text>
+	</nlUtterance>
+	
+	<!-- Robin - phase 3 -->
+	<nlUtterance code="conversation(conversation_objective,x)">
+		<text>How can I help you?</text>
+		<responseOption>conversation(conversation_objective,tell_story)</responseOption>
+		<responseOption>conversation(conversation_objective,tips)</responseOption>
+	</nlUtterance>
+	
+	<nlUtterance code="incident(tell_story_to,x)">
+		<text>To whom are you going to tell your story?</text>
+		<responseOption>incident(tell_story_to,parent)</responseOption>
+		<responseOption>incident(tell_story_to,teacher)</responseOption>
+		<responseOption>incident(tell_story_to,sibling)</responseOption>
+		<responseOption>incident(tell_story_to,peer)</responseOption>
+		<!--<responseOption>incident(tell_story_to,robin)</responseOption>-->
+		<responseOption>incident(tell_story_to,dont_know)</responseOption>
+	</nlUtterance>
+	
+	<nlUtterance code="compliment(tell_story_to,parent)">
+		<text>It's a good idea to talk to your mother or father!</text>
+	</nlUtterance>
+	<nlUtterance code="compliment(tell_story_to,teacher)">
+		<text>It's a good idea to talk to someone at school!</text>
+	</nlUtterance>
+	<nlUtterance code="compliment(tell_story_to,sibling)">
+		<text>It's a good idea to talk to a sibling!</text>
+	</nlUtterance>
+	<nlUtterance code="compliment(tell_story_to,peer)">
+		<text>It's a good idea to talk to a friend!</text>
+	</nlUtterance>
+	
+	<!-- Robin - phase 4 - coping future
+	     Conversation objective = tell_story -->
+	
+	<nlUtterance code="know_someone_you_can_talk_to">
+		<text>I know someone you can talk to.</text>
+	</nlUtterance>
+	<nlUtterance code="know_someone_you_can_ask_for_help">
+		<text>I know someone you can ask for help.</text>
+	</nlUtterance>
+	<nlUtterance code="introduce_pestweb">
+		<text>Every school day between 3:00 PM and 5:00 PM you can chat with Pestweb counselors.</text>
+	</nlUtterance>
+	<nlUtterance code="mail_pestweb">
+		<text>Or you can call them, or send an e-mail.</text>
+	</nlUtterance>
+	<nlUtterance code="website_pestweb">
+		<text>Have a look at their website on www.pestweb.nl</text>
+	</nlUtterance>
+	<nlUtterance code="recommend_pestweb">
+		<text>Pestweb's counselors are the best!</text>
+	</nlUtterance>
+	<nlUtterance code="pestweb_anonymous">
+		<text>And if you want to, you can contact them anonymously</text>
+	</nlUtterance>
+	
+	<nlUtterance code="conversation(want_tips,x)">
+		<text>I can give you some tips to try to (temporarily) stop the bullying.***Would you like that?</text>
+		<responseOption>conversation(want_tips,yes)</responseOption>
+		<responseOption>conversation(want_tips,no)</responseOption>
+	</nlUtterance>
+	
+	<!-- Robin - phase 4 - coping future
+	     Conversation objective = tips -->
+	
+	<nlUtterance code="introduction_coping_options">
+		<text>There are different ways to respond to bullying; let's try to find something that suits you</text>
+	</nlUtterance>
+	<nlUtterance code="introduction_coping_options1">
+		<text>There are diffent ways to respond to bullying:</text>
+	</nlUtterance>
+	<nlUtterance code="coping_option_wait">
+		<text>You can wait until the bullying stops</text>
+	</nlUtterance>
+	<nlUtterance code="coping_option_ignore">
+		<text>You can ignore it</text>
+	</nlUtterance>
+	<nlUtterance code="coping_option_stand_up">
+		<text>You can stand up for yourself</text>
+	</nlUtterance>
+	<nlUtterance code="coping_option_talk_to">
+		<text>You can ask for help</text>
+	</nlUtterance>
+	<nlUtterance code="incident(coping_future,x)">
+		<text>Which option do you like best?</text>
+		<responseOption>incident(coping_future,ignore)</responseOption>
+		<responseOption>incident(coping_future,stand_up)</responseOption>
+		<responseOption>incident(coping_future,talk_to)</responseOption>
+	</nlUtterance>
+	<nlUtterance code="incident(cf_conversation_partner,x)">
+		<text>Whom could you ask for help?</text>
+		<responseOption>incident(cf_conversation_partner,parent)</responseOption>
+		<responseOption>incident(cf_conversation_partner,teacher)</responseOption>
+		<responseOption>incident(cf_conversation_partner,sibling)</responseOption>
+		<responseOption>incident(cf_conversation_partner,peer)</responseOption>
+		<responseOption>incident(cf_conversation_partner,dont_know)</responseOption>
+	</nlUtterance>
+	
+	<nlUtterance code="compliment(cf_conversation_partner,parent)">
+		<text>That's a good idea!</text>
+	</nlUtterance>
+	<nlUtterance code="compliment(cf_conversation_partner,teacher)">
+		<text>That's a good idea!</text>
+	</nlUtterance>
+	<nlUtterance code="compliment(cf_conversation_partner,sibling)">
+		<text>That's a good idea!</text>
+	</nlUtterance>
+	<nlUtterance code="compliment(cf_conversation_partner,peer)">
+		<text>That's a good idea!</text>
+	</nlUtterance>
+	
+	<nlUtterance code="advice(talk_to_adult,parent)">
+		<text>Perhaps the two of you can go talk to your parents after that!</text>
+	</nlUtterance>
+	<nlUtterance code="advice(talk_to_adult,teacher)">
+		<text>Perhaps the two of you can go talk to someone at school!</text>
+	</nlUtterance>
+	<nlUtterance code="confirm_stand_up1">
+		<text>If you let someone know you do not appreciate his behavior, he might stop.</text>
+	</nlUtterance>
+	<nlUtterance code="confirm_stand_up2">
+		<text>Sometimes cyberbullying is based on misunderstandings.</text>
+	</nlUtterance>
+	<nlUtterance code="confirm_stand_up3">
+		<text>By standing up for yourself, you can resolve these misunderstandings.</text>
+	</nlUtterance>
+	<nlUtterance code="confirm_ignore1">
+		<text>Sometimes bullies bully to provoke certain responses.</text>
+	</nlUtterance>
+	<nlUtterance code="confirm_ignore2">
+		<text>If you do not respond to bullying, there is no fun in bullying you and the bullies might stop.</text>
+	</nlUtterance>
+	
+	<!-- Robin - phase 4 - advice
+	     Conversation objective = tell_story -->
+	
+	<nlUtterance code="introduction_tips">
+		<text>Now I'll give some tips to (temporarily) stop the bullies.</text>
+	</nlUtterance>
+	<nlUtterance code="conclusion_tips">
+		<text>Those were my tips.</text>
+	</nlUtterance>
+	
+	<nlUtterance code="advice(accept_friends,x)">
+		<text>To prevent people you do not know from harassing you, you should only accept invitations from people you know and trust</text>
+		<responseOption>advice(accept_friends,confirm)</responseOption>
+	</nlUtterance>
+	
+	<nlUtterance code="advice(email_friends_only,x)">
+		<text>Give your e-mail address only to people you know and trust</text>
+		<responseOption>advice(email_friends_only,confirm)</responseOption>
+	</nlUtterance>
+	
+	<nlUtterance code="advice(msn_block_contact,x)">
+		<text>Block the bully on MSN, so he can't harass you anymore.</text>
+		<responseOption>advice(msn_block_contact,confirm)</responseOption>
+	</nlUtterance>
+	
+	<nlUtterance code="request_teaching(msn_block_contact,x)">
+		<text>Do you want me to explain how to block someone on MSN?</text>
+		<responseOption>request_teaching(msn_block_contact,yes)</responseOption>
+		<responseOption>request_teaching(msn_block_contact,no)</responseOption>
+	</nlUtterance>
+	<nlUtterance code="teach_step(msn_block_contact,log_in)">
+		<text>Start MSN.</text>
+		<responseOption>teach_step(msn_block_contact,log_in,confirm)</responseOption>
+	</nlUtterance>
+	<nlUtterance code="teach_step(msn_block_contact,right_click_contact)">
+		<text>Right click on the name of the person you want to block.</text>
+		<responseOption>teach_step(msn_block_contact,right_click_contact,confirm)</responseOption>
+	</nlUtterance>
+	<nlUtterance code="teach_step(msn_block_contact,choose_block)">
+		<text>Select 'block'.</text>
+		<responseOption>teach_step(msn_block_contact,choose_block,confirm)</responseOption>
+	</nlUtterance>
+	<nlUtterance code="teach_end(msn_block_contact)">
+		<text>Now you know how to block someone on MSN.</text>
+	</nlUtterance>
+	
+	<nlUtterance code="advice(hyves_block_contact,x)">
+		<text>Block the bully, so he can't access your profile anymore.</text>
+		<responseOption>advice(hyves_block_contact,confirm)</responseOption>
+	</nlUtterance>
+	
+	<nlUtterance code="request_teaching(hyves_block_contact,x)">
+		<text>Do you want me to explain how to block someone on Hyves?</text>
+		<responseOption>request_teaching(hyves_block_contact,yes)</responseOption>
+		<responseOption>request_teaching(hyves_block_contact,no)</responseOption>
+	</nlUtterance>
+	<nlUtterance code="teach_step(hyves_block_contact,log_in)">
+		<text>Log in to Hyves.</text>
+		<responseOption>teach_step(hyves_block_contact,log_in,confirm)</responseOption>
+	</nlUtterance>
+	<nlUtterance code="teach_step(hyves_block_contact,go_to_profile)">
+		<text>Go to the profile of the person you want to block.</text>
+		<responseOption>teach_step(hyves_block_contact,go_to_profile,confirm)</responseOption>
+	</nlUtterance>
+	<nlUtterance code="teach_step(hyves_block_contact,unfriend_contact)">
+		<text>Click on 'remove as friend' under the profile picture and click on 'click here if you want to unfriend this person' (you only need to de this if this person is a friend on Hyves).</text>
+		<responseOption>teach_step(hyves_block_contact,unfriend_contact,confirm)</responseOption>
+	</nlUtterance>
+	<nlUtterance code="teach_step(hyves_block_contact,block_contact)">
+		<text>Click on '(De)block' under the profile picture and click 'Block ...'.</text>
+		<responseOption>teach_step(hyves_block_contact,block_contact,confirm)</responseOption>
+	</nlUtterance>
+	<nlUtterance code="teach_end(hyves_block_contact)">
+		<text>Now you know how to block someone on Hyves.</text>
+	</nlUtterance>
+	
+	<nlUtterance code="advice(facebook_block_contact,x)">
+		<text>Block the bully, so he can't access your profile anymore.</text>
+		<responseOption>advice(facebook_block_contact,confirm)</responseOption>
+	</nlUtterance>
+	
+	<nlUtterance code="request_teaching(facebook_block_contact,x)">
+		<text>Do you want me to explain how to block someone on Facebook?</text>
+		<responseOption>request_teaching(facebook_block_contact,yes)</responseOption>
+		<responseOption>request_teaching(facebook_block_contact,no)</responseOption>
+	</nlUtterance>
+	<nlUtterance code="teach_step(facebook_block_contact,log_in)">
+		<text>Log in to Facebook.</text>
+		<responseOption>teach_step(facebook_block_contact,log_in,confirm)</responseOption>
+	</nlUtterance>
+	<nlUtterance code="teach_step(facebook_block_contact,go_to_profile)">
+		<text>Go to the profile of the person you want to block.</text>
+		<responseOption>teach_step(facebook_block_contact,go_to_profile,confirm)</responseOption>
+	</nlUtterance>
+	<nlUtterance code="teach_step(facebook_block_contact,click_settings)">
+		<text>Click settings (gear icon with an arrow pointing down next to it) and select 'Report/Block...'</text>
+		<responseOption>teach_step(facebook_block_contact,click_settings,confirm)</responseOption>
+	</nlUtterance>
+	<nlUtterance code="teach_step(facebook_block_contact,choose_block)">
+		<text>Select 'Block Naam' and choose 'confirm'.</text>
+		<responseOption>teach_step(facebook_block_contact,choose_block,confirm)</responseOption>
+	</nlUtterance>
+	<nlUtterance code="teach_end(facebook_block_contact)">
+		<text>Now you know how to block someone on Facebook.</text>
+	</nlUtterance>
+	
+	<nlUtterance code="advice(hyves_report,x)">
+		<text>Report the photos or videos to Hyves, so they can be removed.</text>
+		<responseOption>advice(hyves_report,confirm)</responseOption>
+	</nlUtterance>
+	
+	<nlUtterance code="request_teaching(hyves_report,x)">
+		<text>Do you want me to explain how to report a photo or video?</text>
+		<responseOption>request_teaching(hyves_report,yes)</responseOption>
+		<responseOption>request_teaching(hyves_report,no)</responseOption>
+	</nlUtterance>
+	<nlUtterance code="teach_step(hyves_report,log_in)">
+		<text>Log in to Hyves.</text>
+		<responseOption>teach_step(hyves_report,log_in,confirm)</responseOption>
+	</nlUtterance>
+	<nlUtterance code="teach_step(hyves_report,go_to_url)">
+		<!-- <text>Ga naar http://www.hyves.nl/help/feedback/?feedbackMode=email&answerId=96&categoryId=142&category=Privacy%2C+pesten+en+spam.</text> --> 
+		<text>Go to HYVESURL</text>
+		<responseOption>teach_step(hyves_report,go_to_url,confirm)</responseOption>
+	</nlUtterance>
+	<nlUtterance code="teach_step(hyves_report,fill_out_form)">
+		<text>Fill out the form (do not forget to include a link to the photo or video in the message).</text>
+		<responseOption>teach_step(hyves_report,fill_out_form,confirm)</responseOption>
+	</nlUtterance>
+	<nlUtterance code="teach_step(hyves_report,click_send)">
+		<text>Click 'send e-mail'.</text>
+		<responseOption>teach_step(hyves_report,click_send,confirm)</responseOption>
+	</nlUtterance>
+	<nlUtterance code="teach_end(hyves_report)">
+		<text>Now you know how to report a photo or video to Hyves.</text>
+	</nlUtterance>
+	
+	<nlUtterance code="advice(facebook_report,x)">
+		<text>Report the photos or videos to Facebook, so they can be removed..</text>
+		<responseOption>advice(facebook_report,confirm)</responseOption>
+	</nlUtterance>
+	
+	<nlUtterance code="request_teaching(facebook_report,x)">
+		<text>Do you want me to explain how to report a photo or video to Facebook?</text>
+		<responseOption>request_teaching(facebook_report,yes)</responseOption>
+		<responseOption>request_teaching(facebook_report,no)</responseOption>
+	</nlUtterance>
+	<nlUtterance code="teach_step(facebook_report,log_in)">
+		<text>Log in to Facebook.</text>
+		<responseOption>teach_step(facebook_report,log_in,confirm)</responseOption>
+	</nlUtterance>
+	<nlUtterance code="teach_step(facebook_report,go_to_picture)">
+		<text>Go to the foto or video you want to report.</text>
+		<responseOption>teach_step(facebook_report,go_to_picture,confirm)</responseOption>
+	</nlUtterance>
+	<nlUtterance code="teach_step(facebook_report,click_options)">
+		<text>Click 'Options'</text>
+		<responseOption>teach_step(facebook_report,click_options,confirm)</responseOption>
+	</nlUtterance>
+	<nlUtterance code="teach_step(facebook_report,choose_report)">
+		<text>Select 'Report this photo'.</text>
+		<responseOption>teach_step(facebook_report,choose_report,confirm)</responseOption>
+	</nlUtterance>
+	<nlUtterance code="teach_end(facebook_report)">
+		<text>Now you know how to report a photo or video.</text>
+	</nlUtterance>
+	
+	<nlUtterance code="advice(create_new_account,x)">
+		<text>If you create a new account, it's harder for the bully to contact you.</text>
+		<responseOption>advice(create_new_account,confirm)</responseOption>
+	</nlUtterance>
+	
+	<nlUtterance code="advice(dont_share_private_info,x)">
+		<text>Keep information such as your address, and password private. Others may abuse this information</text>
+		<responseOption>advice(dont_share_private_info,confirm)</responseOption>
+	</nlUtterance>
+	
+	<nlUtterance code="advice(dont_respond,x)">
+		<text>Do not respond to abusive messages. Many bullies bully to provoke a response.</text>
+		<responseOption>advice(dont_respond,confirm)</responseOption>
+	</nlUtterance>
+	
+	<nlUtterance code="advice(print_evidence,x)">
+		<text>If you print abusive messages (or save them on your computer), you can show them to someone.</text>
+		<responseOption>advice(print_evidence,confirm)</responseOption>
+	</nlUtterance>
+	
+	<!-- Robin - phase 5 -->
+	<nlUtterance code="conversation(feedback_conversation,x)">
+		<text>Was this conversation useful?</text>
+		<responseOption>conversation(feedback_conversation,yes)</responseOption>
+		<responseOption>conversation(feedback_conversation,no)</responseOption>
+	</nlUtterance>
+	
+	<nlUtterance code="express_joy(feedback_conversation,yes)">
+		<text>I'm glad to hear that!</text>
+	</nlUtterance>
+	
+	<nlUtterance code="advice(talk_to,pestweb_pos)">
+		<text>If you want to talk to real person sometime, you can contact the Pestweb counselors on school days between 3:00 PM and 5:00 PM (www.pestweb.nl).</text>
+	</nlUtterance>
+	
+	<nlUtterance code="express_distress(feedback_conversation,no)">
+		<text>Oh, I'm sorry to hear that...</text>
+	</nlUtterance>
+	
+	<nlUtterance code="advice(talk_to,pestweb_neg)">
+		<text>In that case it might be a good idea to talk to a real person sometime. For example to a Pestweb counselor (www.pestweb.nl). Every school day between 3:00 PM and 5:00 PM the counselors can be contacted (anonymously) by chat or by phone.</text>
+	</nlUtterance>
+	
+	<nlUtterance code="advice(talk_to,parent_neg)">
+		<text>In that case it might be a good idea to talk to a real person sometime. For example to your parents.</text>
+	</nlUtterance>
+	<nlUtterance code="advice(talk_to,teacher_neg)">
+		<text>In that case it might be a good idea to talk to a real person sometime. For example to a teacher or school counselor.</text>
+	</nlUtterance>
+	
+	<nlUtterance code="advice(talk_to,parent_pos)">
+		<text>I think you should talk to your parents, as we have talked about.</text>
+	</nlUtterance>
+	<nlUtterance code="advice(talk_to,teacher_pos)">
+		<text>I think you should talk to someone at school, as we have talked about.</text>
+	</nlUtterance>
+	
+	<nlUtterance code="bye">
+		<text>Bye NAAM</text>
+	</nlUtterance>
+	
+</utterances>

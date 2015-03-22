@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequences>
+
+	<!-- topic hello -->
+	<sequence name="hello1">
+		<sa from="robin" contents="greet" />
+		<sa from="user" />
+	</sequence>
+	
+	<!-- topic event_general -->
+	<!-- type_cb, method_cb -->
+	<sequence name="qa(event_type)">
+		<sa from="robin" contents="incident(type,x)"/>
+		<sa from="user"/>
+	</sequence>
+		
+	<sequence name="qa(type_cb)">
+		<sa from="robin" contents="incident(type_cb,x)"/>
+		<sa from="user"/>
+	</sequence>
+	
+	<sequence name="sympathy(type_cb,called_names)">
+		<sa from="robin" contents="sympathy(type_cb,called_names)"/>
+	</sequence>
+	<sequence name="sympathy(type_cb,threatened)">
+		<sa from="robin" contents="sympathy(type_cb,threatened)"/>
+	</sequence>
+	<sequence name="sympathy(type_cb,hacked)">
+		<sa from="robin" contents="sympathy(type_cb,hacked)"/>
+	</sequence>
+	<sequence name="sympathy(type_cb,social_exclusion)">
+		<sa from="robin" contents="sympathy(type_cb,social_exclusion)"/>
+	</sequence>
+	<sequence name="sympathy(type_cb,pictures)">
+		<sa from="robin" contents="sympathy(type_cb,pictures)"/>
+	</sequence>
+	
+	<sequence name="qa(method_cb)">
+		<sa from="robin" contents="incident(method_cb,x)"/>
+		<sa from="user"/>
+	</sequence>
+	
+	<!-- Topic emotional state -->
+	<sequence name="qa(emotional_state)">
+		<sa from="robin" contents="incident(emotional_state,x)"/>
+		<sa from="user"/>
+		<sa from="robin" contents="explain_affect_button"/>
+	</sequence>
+	
+	<sequence name="sympathy(emotional_state,angry)">
+		<sa from="robin" contents="sympathy(emotional_state,angry)"/>
+	</sequence>
+	<sequence name="sympathy(emotional_state,frustrated)">
+		<sa from="robin" contents="sympathy(emotional_state,frustrated)"/>
+	</sequence>
+	<sequence name="sympathy(emotional_state,sad)">
+		<sa from="robin" contents="sympathy(emotional_state,sad)"/>
+	</sequence>
+	<sequence name="sympathy(emotional_state,afraid)">
+		<sa from="robin" contents="sympathy(emotional_state,afraid)"/>
+	</sequence>
+	<sequence name="happy_for(emotional_state,happy)">
+		<sa from="robin" contents="happy_for(emotional_state,happy)"/>
+	</sequence>
+	<sequence name="happy_for(emotional_state,content)">
+		<sa from="robin" contents="happy_for(emotional_state,content)"/>
+	</sequence>
+	<sequence name="happy_for(emotional_state,relaxed)">
+		<sa from="robin" contents="happy_for(emotional_state,relaxed)"/>
+	</sequence>
+	<sequence name="happy_for(emotional_state,surprised)">
+		<sa from="robin" contents="happy_for(emotional_state,surprised)"/>
+	</sequence>
+	
+	<sequence name="sympathy(emotional_state,happy)">
+		<sa from="robin" contents="happy_for(emotional_state,happy)"/>
+	</sequence>
+	<sequence name="sympathy(emotional_state,content)">
+		<sa from="robin" contents="happy_for(emotional_state,content)"/>
+	</sequence>
+	<sequence name="sympathy(emotional_state,relaxed)">
+		<sa from="robin" contents="sympathy(emotional_state,relaxed)"/>
+	</sequence>
+	<sequence name="sympathy(emotional_state,surprised)">
+		<sa from="robin" contents="sympathy(emotional_state,surprised)"/>
+	</sequence>
+	
+	<!-- topic event_details -->
+	<!-- bully, bullying_duration -->
+	<sequence name="qa(bully)">
+		<sa from="robin" contents="incident(bully,x)"/>
+		<sa from="user"/>
+	</sequence>
+	
+	<sequence name="qa(bullying_duration)">
+		<sa from="robin" contents="incident(bullying_duration,x)"/>
+		<sa from="user"/>
+	</sequence>
+	
+	<!-- topic coping_current -->
+	<!-- response_to_bullying -> effectiveness_response_to_bullying -> talked_to_someone -> talked_to -> effectiveness_talked_to -->
+	<sequence name="qa(response_to_bullying)">
+		<sa from="robin" contents="incident(response_to_bullying,x)"/>
+		<sa from="user"/>
+	</sequence>
+	
+	<sequence name="disapprovement(response_to_bullying,retaliate)">
+		<sa from="robin" contents="disapprovement(response_to_bullying,retaliate)"/>
+	</sequence>
+	<sequence name="compliment(response_to_bullying,stand_up)">
+		<sa from="robin" contents="compliment(response_to_bullying,stand_up)"/>
+	</sequence>
+	<sequence name="compliment(response_to_bullying,block_the_bully)">
+		<sa from="robin" contents="compliment(response_to_bullying,block_the_bully)"/>
+	</sequence>
+	<sequence name="compliment(response_to_bullying,report_bully)">
+		<sa from="robin" contents="compliment(response_to_bullying,report_bully)"/>
+	</sequence>
+	
+	<sequence name="qa(effectiveness_response_to_bullying)">
+		<sa from="robin" contents="incident(effectiveness_response_to_bullying,x)"/>
+		<sa from="user"/>
+	</sequence>
+	
+	<sequence name="happy_for(effectiveness_response_to_bullying,stopped)">
+		<sa from="robin" contents="happy_for(effectiveness_response_to_bullying,stopped)"/>
+	</sequence>
+	<sequence name="happy_for(effectiveness_response_to_bullying,felt_better)">
+		<sa from="robin" contents="happy_for(effectiveness_response_to_bullying,felt_better)"/>
+	</sequence>
+	<sequence name="sympathy(effectiveness_response_to_bullying,no_change)">
+		<sa from="robin" contents="sympathy(effectiveness_response_to_bullying,no_change)"/>
+	</sequence>
+	<sequence name="sympathy(effectiveness_response_to_bullying,became_worse)">
+		<sa from="robin" contents="sympathy(effectiveness_response_to_bullying,became_worse)"/>
+	</sequence>
+	
+	<sequence name="qa(talked_to_someone)">
+		<sa from="robin" contents="incident(talked_to_someone,x)"/>
+		<sa from="user"/>
+	</sequence>
+	
+	<sequence name="qa(talked_to)">
+		<sa from="robin" contents="incident(talked_to,x)"/>
+		<sa from="user"/>
+	</sequence>
+	
+	<sequence name="compliment(talked_to,sibling)">
+		<sa from="robin" contents="compliment(talked_to,sibling)"/>
+	</sequence>
+	<sequence name="compliment(talked_to,peer)">
+		<sa from="robin" contents="compliment(talked_to,peer)"/>
+	</sequence>
+	<sequence name="compliment(talked_to,parent)">
+		<sa from="robin" contents="compliment(talked_to,parent)"/>
+	</sequence>
+	<sequence name="compliment(talked_to,teacher)">
+		<sa from="robin" contents="compliment(talked_to,teacher)"/>
+	</sequence>
+	<sequence name="compliment(talked_to,online_contact)">
+		<sa from="robin" contents="compliment(talked_to,online_contact)"/>
+	</sequence>
+	<sequence name="compliment(talked_to,someone_else)">
+		<sa from="robin" contents="compliment(talked_to,someone_else)"/>
+	</sequence>
+		
+	<sequence name="qa(effectiveness_talked_to)">
+		<sa from="robin" contents="incident(effectiveness_talked_to,x)"/>
+		<sa from="user"/>
+	</sequence>
+	
+	<sequence name="happy_for(effectiveness_talked_to,stopped)">
+		<sa from="robin" contents="happy_for(effectiveness_talked_to,stopped)"/>
+	</sequence>
+	<sequence name="happy_for(effectiveness_talked_to,felt_better)">
+		<sa from="robin" contents="happy_for(effectiveness_talked_to,felt_better)"/>
+	</sequence>
+	<sequence name="sympathy(effectiveness_talked_to,no_change)">
+		<sa from="robin" contents="sympathy(effectiveness_talked_to,no_change)"/>
+	</sequence>
+	<sequence name="sympathy(effectiveness_talked_to,became_worse)">
+		<sa from="robin" contents="sympathy(effectiveness_talked_to,became_worse)"/>
+	</sequence>
+	
+	<!-- topic conversation_objective -->
+	<!-- conversation_objective -->
+	<sequence name="qa(conversation_objective)">
+		<sa from="robin" contents="conversation(conversation_objective,x)"/>
+		<sa from="user"/>
+	</sequence>
+	
+	<!-- topic coping_future -->
+	<sequence name="qa(tell_story_to)">
+		<sa from="robin" contents="incident(tell_story_to,x)"/>
+		<sa from="user"/>
+	</sequence>
+	
+	<sequence name="compliment(tell_story_to,parent)">
+		<sa from="robin" contents="compliment(tell_story_to,parent)"/>
+	</sequence>
+	<sequence name="compliment(tell_story_to,teacher)">
+		<sa from="robin" contents="compliment(tell_story_to,teacher)"/>
+	</sequence>
+	<sequence name="compliment(tell_story_to,sibling)">
+		<sa from="robin" contents="compliment(tell_story_to,sibling)"/>
+	</sequence>
+	<sequence name="compliment(tell_story_to,peer)">
+		<sa from="robin" contents="compliment(tell_story_to,peer)"/>
+	</sequence>
+	
+	<sequence name="cant_talk_to_robin">
+		<sa from="robin" contents="cant_talk_to_robin"/>
+	</sequence>
+	
+	<sequence name="talk_to_pestweb">
+		<sa from="robin" contents="know_someone_you_can_talk_to"/>
+		<sa from="robin" contents="introduce_pestweb"/>
+		<sa from="robin" contents="mail_pestweb"/>
+		<sa from="robin" contents="website_pestweb"/>
+		<sa from="robin" contents="recommend_pestweb"/>
+		<sa from="robin" contents="pestweb_anonymous"/>
+	</sequence>
+	
+	<sequence name="ask_pestweb">
+		<sa from="robin" contents="know_someone_you_can_ask_for_help"/>
+		<sa from="robin" contents="introduce_pestweb"/>
+		<sa from="robin" contents="mail_pestweb"/>
+		<sa from="robin" contents="website_pestweb"/>
+		<sa from="robin" contents="recommend_pestweb"/>
+		<sa from="robin" contents="pestweb_anonymous"/>
+	</sequence>
+	
+	<sequence name="qa(want_tips)">
+		<sa from="robin" contents="conversation(want_tips,x)"/>
+		<sa from="user"/>
+	</sequence>
+	
+	<sequence name="coping_options">
+		<sa from="robin" contents="introduction_coping_options"/>
+		<sa from="robin" contents="coping_option_ignore"/>
+		<sa from="robin" contents="coping_option_stand_up"/>
+		<sa from="robin" contents="coping_option_talk_to"/>
+	</sequence>
+	
+	<sequence name="qa(coping_future)">
+		<sa from="robin" contents="incident(coping_future,x)"/>
+		<sa from="user"/>
+	</sequence>
+	
+	<sequence name="compliment(cf_conversation_partner,parent)">
+		<sa from="robin" contents="compliment(cf_conversation_partner,parent)"/>
+	</sequence>
+	<sequence name="compliment(cf_conversation_partner,teacher)">
+		<sa from="robin" contents="compliment(cf_conversation_partner,teacher)"/>
+	</sequence>
+		<sequence name="compliment(cf_conversation_partner,sibling)">
+		<sa from="robin" contents="compliment(cf_conversation_partner,sibling)"/>
+	</sequence>
+		<sequence name="compliment(cf_conversation_partner,peer)">
+		<sa from="robin" contents="compliment(cf_conversation_partner,peer)"/>
+	</sequence>
+
+	<sequence name="confirm_cf(stand_up)">
+		<sa from="robin" contents="confirm_stand_up1"/>
+		<sa from="robin" contents="confirm_stand_up2"/>
+		<sa from="robin" contents="confirm_stand_up3"/>
+	</sequence>
+	
+	<sequence name="confirm_cf(ignore)">
+		<sa from="robin" contents="confirm_ignore1"/>
+		<sa from="robin" contents="confirm_ignore2"/>
+	</sequence>
+		
+	<sequence name="qa(cf_conversation_partner)">
+		<sa from="robin" contents="incident(cf_conversation_partner,x)"/>
+		<sa from="user"/>
+	</sequence>
+	
+	<sequence name="talk_to_adult(teacher)">
+		<sa from="robin" contents="advice(talk_to_adult,teacher)"/>
+	</sequence>
+	<sequence name="talk_to_adult(parent)">
+		<sa from="robin" contents="advice(talk_to_adult,parent)"/>
+	</sequence>
+	
+	<!-- Topic advice -->
+	
+	<sequence name="introduce_tips">
+		<sa from="robin" contents="introduction_tips"/>
+	</sequence>	
+	
+	<!-- voor al het mogelijke advice -->
+	<sequence name="advice(dont_respond)">
+		<sa from="robin" contents="advice(dont_respond,x)"/>
+		<sa from="user"/>
+	</sequence>
+	<sequence name="advice(print_evidence)">
+		<sa from="robin" contents="advice(print_evidence,x)"/>
+		<sa from="user"/>
+	</sequence>
+	<sequence name="advice(accept_friends)">
+		<sa from="robin" contents="advice(accept_friends,x)"/>
+		<sa from="user"/>
+	</sequence>
+	<sequence name="advice(email_friends_only)">
+		<sa from="robin" contents="advice(email_friends_only,x)"/>
+		<sa from="user"/>
+	</sequence>
+	<sequence name="advice(msn_block_contact)">
+		<sa from="robin" contents="advice(msn_block_contact,x)"/>
+		<sa from="user"/>
+	</sequence>
+	<sequence name="advice(facebook_block_contact)">
+		<sa from="robin" contents="advice(facebook_block_contact,x)"/>
+		<sa from="user"/>
+	</sequence>
+	<sequence name="advice(hyves_block_contact)">
+		<sa from="robin" contents="advice(hyves_block_contact,x)"/>
+		<sa from="user"/>
+	</sequence>
+	<sequence name="advice(dont_share_private_info)">
+		<sa from="robin" contents="advice(dont_share_private_info,x)"/>
+		<sa from="user"/>
+	</sequence>
+	<sequence name="advice(create_new_account)">
+		<sa from="robin" contents="advice(create_new_account,x)"/>
+		<sa from="user"/>
+	</sequence>
+	<sequence name="advice(hyves_report)">
+		<sa from="robin" contents="advice(hyves_report,x)"/>
+		<sa from="user"/>
+	</sequence>
+	<sequence name="advice(facebook_report)">
+		<sa from="robin" contents="advice(facebook_report,x)"/>
+		<sa from="user"/>
+	</sequence>
+	
+	<sequence name="request_teaching(msn_block_contact)">
+		<sa from="robin" contents="request_teaching(msn_block_contact,x)"/>
+		<sa from="user"/>
+	</sequence>
+	<sequence name="teach(msn_block_contact1)">
+		<sa from="robin" contents="teach_step(msn_block_contact,log_in)"/>
+		<sa from="user"/>
+	</sequence>
+	<sequence name="teach(msn_block_contact2)">
+		<sa from="robin" contents="teach_step(msn_block_contact,right_click_contact)"/>
+		<sa from="user"/>
+	</sequence>
+	<sequence name="teach(msn_block_contact3)">
+		<sa from="robin" contents="teach_step(msn_block_contact,choose_block)"/>
+		<sa from="user"/>
+	</sequence>
+	<sequence name="teach_end(msn_block_contact)">
+		<sa from="robin" contents="teach_end(msn_block_contact)"/>
+	</sequence>
+	
+	<sequence name="request_teaching(hyves_block_contact)">
+		<sa from="robin" contents="request_teaching(hyves_block_contact,x)"/>
+		<sa from="user"/>
+	</sequence>
+	<sequence name="teach(hyves_block_contact1)">
+		<sa from="robin" contents="teach_step(hyves_block_contact,log_in)"/>
+		<sa from="user"/>
+	</sequence>
+	<sequence name="teach(hyves_block_contact2)">
+		<sa from="robin" contents="teach_step(hyves_block_contact,go_to_profile)"/>
+		<sa from="user"/>
+	</sequence>
+	<sequence name="teach(hyves_block_contact3)">
+		<sa from="robin" contents="teach_step(hyves_block_contact,unfriend_contact)"/>
+		<sa from="user"/>
+	</sequence>
+	<sequence name="teach(hyves_block_contact4)">
+		<sa from="robin" contents="teach_step(hyves_block_contact,block_contact)"/>
+		<sa from="user"/>
+	</sequence>
+	<sequence name="teach_end(hyves_block_contact)">
+		<sa from="robin" contents="teach_end(hyves_block_contact)"/>
+	</sequence>
+	
+	<sequence name="request_teaching(facebook_block_contact)">
+		<sa from="robin" contents="request_teaching(facebook_block_contact,x)"/>
+		<sa from="user"/>
+	</sequence>
+	<sequence name="teach(facebook_block_contact1)">
+		<sa from="robin" contents="teach_step(facebook_block_contact,log_in)"/>
+		<sa from="user"/>
+	</sequence>
+	<sequence name="teach(facebook_block_contact2)">
+		<sa from="robin" contents="teach_step(facebook_block_contact,go_to_profile)"/>
+		<sa from="user"/>
+	</sequence>
+	<sequence name="teach(facebook_block_contact3)">
+		<sa from="robin" contents="teach_step(facebook_block_contact,click_settings)"/>
+		<sa from="user"/>
+	</sequence>
+	<sequence name="teach(facebook_block_contact4)">
+		<sa from="robin" contents="teach_step(facebook_block_contact,choose_block)"/>
+		<sa from="user"/>
+	</sequence>
+	<sequence name="teach_end(facebook_block_contact)">
+		<sa from="robin" contents="teach_end(facebook_block_contact)"/>
+	</sequence>
+	
+	<sequence name="request_teaching(hyves_report)">
+		<sa from="robin" contents="request_teaching(hyves_report,x)"/>
+		<sa from="user"/>
+	</sequence>
+	<sequence name="teach(hyves_report1)">
+		<sa from="robin" contents="teach_step(hyves_report,log_in)"/>
+		<sa from="user"/>
+	</sequence>
+	<sequence name="teach(hyves_report2)">
+		<sa from="robin" contents="teach_step(hyves_report,go_to_url)"/>
+		<sa from="user"/>
+	</sequence>
+	<sequence name="teach(hyves_report3)">
+		<sa from="robin" contents="teach_step(hyves_report,fill_out_form)"/>
+		<sa from="user"/>
+	</sequence>
+	<sequence name="teach(hyves_report4)">
+		<sa from="robin" contents="teach_step(hyves_report,click_send)"/>
+		<sa from="user"/>
+	</sequence>
+	<sequence name="teach_end(hyves_report)">
+		<sa from="robin" contents="teach_end(hyves_report)"/>
+	</sequence>
+			
+	<sequence name="conclude_tips">
+		<sa from="robin" contents="conclusion_tips"/>
+	</sequence>
+	
+	<sequence name="request_teaching(facebook_report)">
+		<sa from="robin" contents="request_teaching(facebook_report,x)"/>
+		<sa from="user"/>
+	</sequence>
+	<sequence name="teach(facebook_report1)">
+		<sa from="robin" contents="teach_step(facebook_report,log_in)"/>
+		<sa from="user"/>
+	</sequence>
+	<sequence name="teach(facebook_report2)">
+		<sa from="robin" contents="teach_step(facebook_report,go_to_picture)"/>
+		<sa from="user"/>
+	</sequence>
+	<sequence name="teach(facebook_report3)">
+		<sa from="robin" contents="teach_step(facebook_report,click_options)"/>
+		<sa from="user"/>
+	</sequence>
+	<sequence name="teach(facebook_report4)">
+		<sa from="robin" contents="teach_step(facebook_report,choose_report)"/>
+		<sa from="user"/>
+	</sequence>
+	<sequence name="teach_end(facebook_report)">
+		<sa from="robin" contents="teach_end(facebook_report)"/>
+	</sequence>
+	
+	<!-- Topic bye -->
+	<sequence name="qa(feedback_conversation)">
+		<sa from="robin" contents="conversation(feedback_conversation,x)"/>
+		<sa from="user"/>
+	</sequence>
+	
+	<sequence name="advice(talk_to,parent_neg)">
+		<sa from="robin" contents="advice(talk_to,parent_neg)"/>
+	</sequence>
+	<sequence name="advice(talk_to,teacher_neg)">
+		<sa from="robin" contents="advice(talk_to,teacher_neg)"/>
+	</sequence>
+	<sequence name="advice(talk_to,pestweb_neg)">
+		<sa from="robin" contents="advice(talk_to,pestweb_neg)"/>
+	</sequence>
+	<sequence name="advice(talk_to,parent_pos)">
+		<sa from="robin" contents="advice(talk_to,parent_pos)"/>
+	</sequence>
+	<sequence name="advice(talk_to,teacher_pos)">
+		<sa from="robin" contents="advice(talk_to,teacher_pos)"/>
+	</sequence>
+	<sequence name="advice(talk_to,pestweb_pos)">
+		<sa from="robin" contents="advice(talk_to,pestweb_pos)"/>
+	</sequence>
+	
+	<sequence name="express_joy(feedback_conversation,yes)">
+		<sa from="robin" contents="express_joy(feedback_conversation,yes)"/>
+	</sequence>
+	<sequence name="express_distress(feedback_conversation,no)">
+		<sa from="robin" contents="express_distress(feedback_conversation,no)"/>
+	</sequence>
+	
+	<sequence name="bye1">
+		<sa from="robin" contents="bye"/>
+	</sequence>
+	
+</sequences>
+
